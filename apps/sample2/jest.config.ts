@@ -3,6 +3,7 @@ export default {
   displayName: 'sample2',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
+  coverageReporters: ['cobertura', 'html', 'text-summary'],
   globals: {
     'ts-jest': {
       tsconfig: '<rootDir>/tsconfig.spec.json',
